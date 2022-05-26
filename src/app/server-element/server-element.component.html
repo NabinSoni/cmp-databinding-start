@@ -7,8 +7,11 @@
         <div class="panel-body">
           <p>
             <strong *ngIf="element.type === 'server'" style="color: red">{{ element.content }}</strong>
-            <em *ngIf="element.type === 'blueprint'" style="color: blue;">{{ element.content }}</em>
+            <em *ngIf="element.type === 'blueprint'" style="color: blue;">{{ element.content }}</em>           
           </p>
+          <p class="dog">Amazing Dog</p>
+          <input type="text" #name><!--local reference = #name-->
+          <button type="submit" (click)="onSubmit(name)"></button>
         </div>
       </div>
     </div>
