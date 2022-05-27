@@ -13,6 +13,9 @@ export class CockpitComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  ngOnChange():void{
+    console.log("Cockpit Property Changed OnChange()");
+  }
 
   newServerName = '';
   newServerContent = '';
